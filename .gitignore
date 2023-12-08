@@ -1,0 +1,87 @@
+# .gitignore for terraform project
+
+
+# General .gitignore for Git, Vim/GVim, and Visual Studio Code (VSCode)
+
+### Git ###
+# Exclude the metadata directory
+# Note: .git directory is always ignored by git
+
+### Vim/GVim ###
+# Swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session files
+Session.vim
+
+# Temporary files
+.netrwhist
+*~
+
+# Undo files
+*.un~
+
+### Visual Studio Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Local History for Visual Studio Code
+.history/
+
+# Others
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules in JS/TS projects
+node_modules/
+
+# Ignore build output directories
+build/
+dist/
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files, which might contain sensitive data, such as
+# password, private keys, and other secrets. These should not be part of version control
+# as they are data files, not scripts.
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally and are not part of version control
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore output of the terraform plan command
+*.tfplan
+*.tfplan.*
+
+# Ignore .terraform.lock.hcl file which may contain provider checksums
+.terraform.lock.hcl
+
