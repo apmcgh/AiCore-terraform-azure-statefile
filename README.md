@@ -86,8 +86,7 @@ Contributions and suggestions are welcome. This is a platform to learn best prac
 
 # TODO
 
-Find out how to use the credentials stored in the key vault to create and manage a
-sample terraform project in the given RG, with the given SP.
+See [Issues](https://github.com/apmcgh/AiCore-terraform-azure-statefile/issues)
 
 
 ---
@@ -133,4 +132,19 @@ git checkout develop
 git add .
 git commit -m 'Improve README'
 git push --set-upstream origin develop
+```
+
+Merge into master:
+```
+git checkout master
+git merge develop
+git push
+git checkout develop # go back to develop
+```
+
+Register first features to develop:
+```
+gh issue create -t "Feature: Use stored credentials" -b "Find out how to use the credentials stored in the key vault to create and manage a sample terraform project in the given RG, with the given SP."
+gh issue create -t "Feature: State file in cloud" -b "Configure terraform sample project to manage state file in azure storage."
+gh issue create -t "Feature: State file versioning in cloud" -b "Configure terraform sample project to manage state file versioning in azure storage."
 ```
