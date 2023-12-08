@@ -10,7 +10,7 @@ This repo aims to provide a complete working example of a terraform configuratio
    required to start any new terraform project under a pre-set SP (service principal)
    and RG (resource group), and SP credentials managed in a key vault.
 1. set-up a sample project using SP credentials, with state file managed on azure storage,
-   storage provide by basic set-up step, as above.
+   storage provided by basic set-up step, as above.
 
 The **purpose** is to leave no place for manual configuration.
 
